@@ -1,0 +1,3 @@
+#!/bin/sh
+rubber -d josmref.tex && okular josmref.pdf
+

@@ -6,35 +6,56 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{multicol}
-\usepackage{keystroke}
+% \usepackage{keystroke}
 % ftp://dante.ctan.org/tex-archive/macros/latex/contrib/keystroke/key-test.pdf
 
 \usepackage{graphicx}
 \graphicspath{{gfx/}}
 
-\newcommand{\Key}[2]{{\tt #1} {#2}\\[2mm]}
+\newcommand{\Key}[2]{{\bf {\tt #1}}\quad {#2}\\[2mm]}
 
 
 \begin{document} 
 {\Huge JOSM Kurzreferenz}\\
 {\small PDF erstellt am \today}
 
+Es gibt in OSM nur Knoten mit einer Liste von Schlüssel-Wert-Paaren (Notation: \texttt{key = Value}).
+Sie können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
+Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
+
+
 \section*{Werkzeuge}
-\Key{\keystroke{s}}{Auswahlwerkzeug (select)}
+\Key{s}{Auswahlwerkzeug (select)}
 \Key{a}{Knotenwerkzeug fügt Knoten hinzu (add nodes)}
+\Key{c}{Pfade kombinieren (combine)}
+\Key{n}{neuen Knoten hinzufügen}
+\Key{p}{Pfad an diesem Knoten auftrennen}
+\Key{Shift + j}{Selektierte Flächen vereinigen}
+\Key{Strg + z}{Rückgängig}
 
 \section*{Hausbau}
 \Key{w}{Gebäude zeichnen}
+\Key{x}{Fläche zwischen zwei Knoten wie eine Schublade ausziehen}
+\Key{Shift + t}{markierte Fläche in Reihenhäuser mit Adressen aufteilen}
+\Key{Shift + r}{Reihenfolge der Hausnummern von Reihenhäusern umkehren}
 
 \section*{Kommunikation}
-\Key{\keystroke{Strg} + \keystroke{i}}{Ausgewähltes Objekt im Browser öffnen. Etwa um Link auf ein Objekt zu mailen}
+\Key{Strg + i}{Ausgewähltes Objekt im Browser öffnen. Etwa um Link auf ein Objekt zu mailen}
 
 \section*{Tracks/Fotos}
-
+Tipp: Prune kann .gpx Tracks beschneiden. 
 
 
 \newpage
 \section*{Wichtige Tags}
+\section*{Besonders wichtige Plugins}
+\begin{description}
+\item[Openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
+\item[terracer] Hausbautool für Reihenhäuser
+\item[validator] Prüft Karte auf logische Unstimmigkeiten
+(Achtung! Erzeugt manchmal Fehlalarm!) 
+\item[wms] Zeigt Luftbilder im Hintergrund an. Manchmal sehr kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM-Wiki beachten.
+\end{description}
 
 \newpage
 Diese Befehlsreferenz wurde von Jonas Stein in \LaTeX gesetzt.

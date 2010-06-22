@@ -1,1 +1,4 @@
 Command Reference for JOSM
+
+compile .tex and view the pdf:
+rubber -d josmref.tex && okular josmref.pdf

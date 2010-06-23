@@ -32,10 +32,11 @@ Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 \Key{p}{Pfad an diesem Knoten auftrennen}
 \Key{Shift + j}{Selektierte Flächen vereinigen}
 \Key{Strg + z}{Rückgängig}
+\Key{Strg + b}{Tag hinzufügen}
 
 \section*{Hausbau}
 \Key{w}{Gebäude zeichnen}
-\Key{x}{Fläche zwischen zwei Knoten wie eine Schublade ausziehen}
+\Key{x}{Fläche zwischen zwei Knoten wie eine Schublade ausziehen (extrudieren)}
 \Key{Shift + t}{markierte Fläche in Reihenhäuser mit Adressen aufteilen}
 \Key{Shift + r}{Reihenfolge der Hausnummern von Reihenhäusern umkehren}
 
@@ -43,18 +44,24 @@ Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 \Key{Strg + i}{Ausgewähltes Objekt im Browser öffnen. Etwa um Link auf ein Objekt zu mailen}
 
 \section*{Tracks/Fotos}
+
+\textbf{Bilder georeferenzieren} Es ist möglich, in Bildern Geoinformationen (Ort an dem das Bild erstellt wurde) zu speichern. Da die allermeisten Digitalkameras (noch) keinen GPS-Empfänger haben, müssen die Bilder nachtraglich mit den Geoinformationen versehen werden. Dazu nimmt man die Uhrzeit, an der ein Bild aufgenommen wurde und sucht aus dem passenden GPX-Track die zugehörige Koordinate. Damit das zuverlässig klappt, muss man die Uhrzeit der Kamera, mit der GPS-Zeit abgleichen. 
+Dazu fotografiert man VOR der Tour das Display des GPS-Gerätes mit der eingeblendeten Uhrzeit. Später kann man in JOSM dann beim Importieren der Bilder die Uhrzeit von dem Bild eingeben. JOSM übernimmt dann die Zuordnung der Fotos zu den jeweiligen Koordinaten. 
+
 Tipp: Prune kann .gpx Tracks beschneiden. 
 
 
 \newpage
 \section*{Wichtige Tags}
+
 \section*{Besonders wichtige Plugins}
 \begin{description}
 \item[Openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
 \item[terracer] Hausbautool für Reihenhäuser
 \item[validator] Prüft Karte auf logische Unstimmigkeiten
-(Achtung! Erzeugt manchmal Fehlalarm!) 
+(Achtung! Erzeugt manchmal Fehlalarme!) 
 \item[wms] Zeigt Luftbilder im Hintergrund an. Manchmal sehr kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM-Wiki beachten.
+\item[editgpx] Ermöglicht das Löschen von Punkten aus GPX-Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
 \end{description}
 
 \newpage

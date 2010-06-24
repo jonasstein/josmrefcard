@@ -3,5 +3,7 @@ Command Reference for JOSM
 compile .tex and view the pdf:
 rubber -d josmref.tex && okular josmref.pdf
 
+please use a linebreak after 72 char.
+
 everyone can download the .pdf from:
 http://download.jonasstein.de/josmref.pdf

@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{multicol}
+\usepackage{hyperref}
 % \usepackage{keystroke}
 % ftp://dante.ctan.org/tex-archive/macros/latex/contrib/keystroke/key-test.pdf
 
@@ -15,7 +16,15 @@
 \newcommand{\Key}[2]{{\bf {\tt #1}}\quad {#2}\\[2mm]}
 \newcommand{\Icon}[1]{\includegraphics[width=7mm]{#1}}
 
+
 \begin{document} 
+\hypersetup{
+  pdftitle={JOSM Kurzreferenz},  
+  pdfsubject={Kurzreferenz mit Tipps zu JOSM},
+  pdfauthor={Jonas Stein, et al.}
+  pdfnewwindow=true
+}
+
 {\Huge JOSM Kurzreferenz}\\
 {\small PDF erstellt am \today}
 
@@ -23,6 +32,9 @@ Es gibt in OSM nur Knoten mit einer Liste von Schlüssel-Wert-Paaren (Notation: 
 Sie können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
 Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 
+\section*{Daten holen/senden}
+\Icon{JOSM-Icon_Daten_download.png} \Key{Ctrl + Shift + d}{Kartendaten vom OSM-Server holen (download)}
+\Icon{JOSM-Icon_Daten_upload.png} \Key{Ctrl + Shift + u}{Änderungen an OSM-Server senden (upload)}
 
 \section*{Werkzeuge}
 \Icon{Objekte_auswaehlen.png} \Key{s}{Auswahlwerkzeug (select)}
@@ -41,7 +53,7 @@ Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 \Key{Shift + r}{Reihenfolge der Hausnummern von Reihenhäusern umkehren}
 
 \section*{Kommunikation}
-\Key{Strg + i}{Ausgewähltes Objekt im Browser öffnen. Etwa um Link auf ein Objekt zu mailen}
+\Key{Strg + i}{Ausgewähltes Objekt im Browser öffnen. Diesen eindeutigen Link kann man anderen senden um ein Objekt zu zeigen}
 
 \section*{Tracks/Fotos}
 
@@ -54,11 +66,14 @@ Dazu fotografiert man \textbf{während} der Tour das Display des GPS-Gerätes mi
 kann man in JOSM dann beim Importieren der Bilder die Uhrzeit von dem Bild eingeben. JOSM übernimmt dann die Zuordnung
 der Fotos zu den jeweiligen Koordinaten. \\
 
-Tipp: Prune kann .gpx Tracks beschneiden. 
-
+Tipp: \textbf{Prune} kann .gpx Tracks beschneiden. 
+\href{http://activityworkshop.net/software/prune/}{activityworkshop.net/software/prune/}
 
 \newpage
 \section*{Wichtige Tags}
+\begin{description}
+\item[note=*] Notiz für andere Mapper
+\end{description}
 
 \section*{Besonders wichtige Plugins}
 \begin{description}
@@ -73,10 +88,11 @@ Anleitung im OSM-Wiki beachten.
 
 \newpage
 Diese Befehlsreferenz wurde von Jonas Stein in \LaTeX gesetzt.
-Verbesserungsvorschläge bitte an news@jonasstein.de mailen.
-Die Quelldaten sind online erreichbar unter: \texttt{http://github.com/jonasstein/josmrefcard/}
+Verbesserungsvorschläge bitte an \href{mailto:news@jonasstein.de}{news@jonasstein.de} mailen.
+Die Quelldaten sind online erreichbar unter: 
+\href{http://github.com/jonasstein/josmrefcard/}{github.com/jonasstein/josmrefcard/}
 
-\textbf{Dank an:} % Bitte hier mit Komma separiert nach einer Ergaenzung selbst eintragen.
+\textbf{Dank für das Mitwirken an:} Max Andre
 
 
 \end{document}

@@ -33,18 +33,19 @@ Sie können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden
 Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 
 \section*{Daten holen/senden}
-\Icon{JOSM-Icon_Daten_download.png} \Key{Ctrl + Shift + d}{Kartendaten vom OSM-Server holen (download)}
-\Icon{JOSM-Icon_Daten_upload.png} \Key{Ctrl + Shift + u}{Änderungen an OSM-Server senden (upload)}
+\Icon{download.png} \Key{Ctrl + Shift + d}{Kartendaten vom OSM-Server holen (download)}
+\Icon{upload.png} \Key{Ctrl + Shift + u}{Änderungen an OSM-Server senden (upload)}
 
 \section*{Werkzeuge}
-\Icon{Objekte_auswaehlen.png} \Key{s}{Auswahlwerkzeug (select)}
-\Icon{Setze_Knotenpunkt.png} \Key{a}{Knotenwerkzeug fügt Knoten hinzu (add nodes)}
-\Key{c}{Pfade kombinieren (combine)}
-\Key{n}{neuen Knoten hinzufügen}
-\Key{p}{Pfad an diesem Knoten auftrennen}
-\Key{Shift + j}{Selektierte Flächen vereinigen}
-\Key{Strg + z}{Rückgängig}
-\Key{Strg + b}{Tag hinzufügen}
+\Icon{move.png} \Key{s}{Auswahlwerkzeug (select)}
+\Icon{addnode.png} \Key{a}{Knoten hinzufügen (add nodes)}
+\Icon{combineway.png} \Key{c}{Pfade kombinieren (combine)}
+\Icon{addnode.png} \Key{n}{neuen Knoten hinzufügen}
+\Icon{splitway.png} \Key{p}{Pfad an diesem Knoten auftrennen}
+\Icon{joinareas.png} \Key{Shift + j}{Selektierte Flächen vereinigen}
+\Icon{undo.png} \Key{Strg + z}{Rückgängig}
+\Icon{add.png} \Key{Strg + b}{Tag hinzufügen}
+
 
 \section*{Hausbau}
 \Key{w}{Gebäude zeichnen}
@@ -73,6 +74,13 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \section*{Wichtige Tags}
 \begin{description}
 \item[note=*] Notiz für andere Mapper
+\subsection{Hausnummern}
+\item[addr:street=*] Straßenname
+\item[addr:housenumber=*] Hausnummer
+\item[addr:postcode=*] Postleitzahl
+\item[addr:city=*] Stadt
+\item[addr:country=*] ISO-Länderkürzel (alpha-2)
+\item
 \end{description}
 
 \section*{Besonders wichtige Plugins}

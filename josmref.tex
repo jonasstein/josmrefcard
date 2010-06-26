@@ -58,7 +58,7 @@ Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 
 \section*{Tracks/Fotos}
 
-\textbf{Bilder georeferenzieren} Es ist möglich, in Bildern Geoinformationen (Ort an dem das Bild erstellt wurde) zu 
+\subsection*{Bilder georeferenzieren} Es ist möglich, in Bildern Geoinformationen (Ort an dem das Bild erstellt wurde) zu 
 speichern. Da die allermeisten Digitalkameras (noch) keinen GPS-Empfänger haben, müssen die Bilder nachträglich mit 
 den Geoinformationen versehen werden. Dazu nimmt man die Uhrzeit, an der ein Bild aufgenommen wurde und sucht aus dem 
 passenden GPX-Track die zugehörige Koordinate. Damit das zuverlässig klappt, muss man die Uhrzeit der Kamera, mit der 
@@ -73,14 +73,28 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \newpage
 \section*{Wichtige Tags}
 \begin{description}
+\item[name=*] Name eines Objekts
 \item[note=*] Notiz für andere Mapper
+\item[fixme=*] Notiz für andere Mapper, das hier ein Fehler ist
+\item[source=*] Datenquelle (Yahoo, GPS, survey)
 \subsection{Hausnummern}
 \item[addr:street=*] Straßenname
-\item[addr:housenumber=*] Hausnummer
+\item[addr:housenumber=*] Hausnummer \\ \textit{evtl. zusammen mit}
+\item[addr:interpolation=all/even/odd] Hausnummern über Pfad interpolieren
 \item[addr:postcode=*] Postleitzahl
 \item[addr:city=*] Stadt
 \item[addr:country=*] ISO-Länderkürzel (alpha-2)
-\item
+\subsection{ÖPNV}
+\item[highway=bus\_stop] Bushaltestelle
+\item[amenity=bus\_station] Busbahnhof
+\item[railway=station] Bahnhof
+\item[railway=halt] Bahn-Haltepunkt
+\subsection{Post}
+\item[amenity=post\_box] Briefkasten
+\item[amenity=post\_office] Post'amt'
+\item[amenity=vending\_machine] zusammen mit:
+\item[vending=parcel\_pickup; parcel\_mail\_in] Packstation
+
 \end{description}
 
 \section*{Besonders wichtige Plugins}

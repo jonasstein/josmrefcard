@@ -5,5 +5,11 @@ rubber -d josmref.tex && okular josmref.pdf
 
 please use a linebreak after 79 char.
 
-everyone can download the .pdf from:
+everyone can download the PDF-document
+
+Onesided printing and 
+duplex printing (flipping on short-edge)
 http://download.jonasstein.de/josmref.pdf
+
+duplex printing (flipping on long-edge)
+http://download.jonasstein.de/josmref_long_edge.pdf

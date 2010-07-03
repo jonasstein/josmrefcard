@@ -32,6 +32,10 @@ Es gibt in OSM nur Knoten mit einer Liste von Schlüssel-Wert-Paaren (Notation: 
 Sie können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
 Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 
+% \section*{JOSM Installation/Update} 
+% wie kann man das extrem kurz und informativ einbinden?
+
+
 \section*{Daten holen/senden}
 \Icon{download.png} \Key{Strg + Shift + d}{Kartendaten vom OSM-Server holen (download)}
 \Icon{upload.png} \Key{Strg + Shift + u}{Änderungen an OSM-Server senden (upload)}
@@ -61,9 +65,9 @@ speichern. Da die allermeisten Digitalkameras (noch) keinen GPS-Empfänger haben
 den Geoinformationen versehen werden. Dazu nimmt man die Uhrzeit, an der ein Bild aufgenommen wurde und sucht aus dem 
 passenden GPX-Track die zugehörige Koordinate. Damit das zuverlässig klappt, muss man die Uhrzeit der Kamera, mit der 
 GPS-Zeit abgleichen. \\
-Dazu fotografiert man \textbf{während} der Tour das Display des GPS-Gerätes mit der eingeblendeten Uhrzeit. Später 
-kann man in JOSM dann beim Importieren der Bilder die Uhrzeit von dem Bild eingeben. JOSM übernimmt dann die Zuordnung
-der Fotos zu den jeweiligen Koordinaten. \\
+Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem Display des GPS-Gerätes.  
+In JOSM kann beim Importieren der Bilder dann die Uhrzeit von dem Bild abgelesen werden. \\
+JOSM berechnet um wieviel die Kamerauhr falsch ging. korrigiert die Zeit und übernimmt dann die Zuordnung der Fotos zu den jeweiligen Koordinaten. \\
 
 Tipp: \textbf{Prune} kann .gpx Tracks beschneiden. 
 \href{http://activityworkshop.net/software/prune/}{activityworkshop.net/software/prune/}
@@ -71,10 +75,12 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \newpage
 \section*{Wichtige Tags}
 \begin{description}
-\item[name=*] Name eines Objekts
+\item[name=*] Name des Objektes ()
 \item[note=*] Notiz für andere Mapper
-\item[fixme=*] Notiz für andere Mapper, das hier ein Fehler ist
+\item[fixme=*] wie \texttt{note} für Fehler % Kann das  jemand besser formulieren?
 \item[source=*] Datenquelle (Yahoo, GPS, survey)
+\subsection*{Straßen}
+\item[maxspeed=*] Maximal zulässige Höchstgeschwindigkeit in km/h
 \subsection*{Hausnummern}
 \item[addr:street=*] Straßenname
 \item[addr:housenumber=*] Hausnummer \\ \textit{evtl. zusammen mit}
@@ -92,9 +98,9 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \item[amenity=post\_office] Post'amt'
 \item[amenity=vending\_machine] zusammen mit:
 \item[vending=parcel\_pickup; parcel\_mail\_in] Packstation
-\subsection*{Stadtmöblierung}
+\subsection*{Stadtmöbelierung}
 \item[amenity=waste\_basket] Mülleimer
-\item[amenity=bench] (Park)Bank
+\item[amenity=bench] Sitzbank
 \item[lit=yes|no] Straßenbeleuchtung
 \item[tourism=picnic\_site] Picknick-Platz
 \item[barrier=bollard] Poller
@@ -116,11 +122,12 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \item[amenity=kindergarten] Kindergarten
 \item[tourism=museum] Museum
 \item[leisure=playground] Spielplatz
-\item[highway=stop] STOP-Schild
+% \item[highway=stop] STOP-Schild 
+% ^^ hier gibt es verschiedene Auffassungen, ob/wie das zu mappen ist. besser nicht fuer Anfaenger. ~JS
 \item[shop=supermarket] Supermarkt
 \\
-\item[Tipp:] Eine Übersicht über viele wichtige Tags findet sich unter: 
-http://wiki.osm.org/wiki/DE:Howto\_Map\_A
+\item[Tipp:] Eine Übersicht wichtiger Tags steht im OSM-Wiki: 
+\href{http://wiki.osm.org/wiki/DE:Howto_Map_A}{wiki.osm.org/wiki/DE:Howto\_Map\_A}
 \end{description}
 
 \newpage

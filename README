@@ -1,10 +1,6 @@
 Command Reference for JOSM
 
-compile .tex and view the pdf:
-rubber -d josmref.tex && okular josmref.pdf
-
-please use a linebreak after 79 char.
-
+== user info ==
 everyone can download the PDF-document
 
 Onesided printing and 
@@ -13,3 +9,17 @@ http://download.jonasstein.de/josmref.pdf
 
 duplex printing (flipping on long-edge)
 http://download.jonasstein.de/josmref_long_edge.pdf
+
+
+
+== coder info ==
+compile .tex and view the pdf:
+rubber -d josmref.tex && okular josmref.pdf
+
+please use a linebreak after 79 char
+please only include .tex source and the source graphics,
+do not add the .pdf file or logfiles. 
+
+The maintainer compiles the .tex files and upload the .pdf 
+short time after change.
+

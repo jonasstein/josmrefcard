@@ -76,13 +76,15 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \item[source=*] Datenquelle (Yahoo, GPS, survey)
 \subsection*{Straßen}
 \item[maxspeed=*] Geschwindigkeitsbegrenzung in km/h
+\item[lit=yes|no] Straße ist beleuchtet
 \subsection*{Hausnummern}
 \item[addr:street=*] Straßenname
 \item[addr:housenumber=*] Hausnummer \\ \textit{evtl. zusammen mit}
 \item[addr:interpolation=all/even/odd] Hausnummern über Pfad interpolieren
 \item[addr:postcode=*] Postleitzahl
 \item[addr:city=*] Stadt
-\item[addr:country=*] ISO-Länderkürzel (alpha2)
+\item[addr:country=*] ISO-Länderkürzel (z.B. DE)
+% was anderes als DE wird der Einsteiger erstmal nicht brauchen.
 \subsection*{ÖPNV}
 \item[highway=bus\_stop] Bushaltestelle
 \item[amenity=bus\_station] Busbahnhof
@@ -96,7 +98,6 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \subsection*{Stadtmöbelierung}
 \item[amenity=waste\_basket] Mülleimer
 \item[amenity=bench] Sitzbank
-\item[lit=yes|no] Straßenbeleuchtung
 \item[tourism=picnic\_site] Picknick-Platz
 \item[barrier=bollard] Poller
 \item[barrier=cycle\_barrier] Umlaufgitter

@@ -78,12 +78,17 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \item[fixme=*] wie \texttt{note} für Fehler % Kann das jemand besser formulieren?
 \item[source=*] Datenquelle (Yahoo, GPS, survey)
 \subsection*{Straßen}
-\item[maxspeed=*] Geschwindigkeitsbegrenzung in km/h
+\item[highway=residential] innerörtliche Straße
+\item[highway=living\_street] Spielstraße
+\item[maxspeed=*] Geschwindigkeitsbegrenzung 
+%zusatz km/h würde ich weglassen, da in D so üblich.
 \item[lit=yes\textbar no] Straße ist beleuchtet
 \subsection*{Hausnummern}
 \item[addr:street=*] Straßenname
-\item[addr:housenumber=*] Hausnummer \\ \textit{evtl. zusammen mit}
-\item[addr:interpolation=all\textbar even\textbar odd] Hausnummern über Pfad interpolieren
+\item[addr:housenumber=*] Hausnummer 
+%\\ \textit{evtl. zusammen mit}
+%\item[addr:interpolation=all\textbar even\textbar odd] Hausnummern über Pfad interpolieren
+%vielleicht nicht unbedingt für Anfänger, da eigentlich nur als Notlösung gedacht ~MA
 \item[addr:postcode=*] Postleitzahl
 \item[addr:city=*] Stadt
 \item[addr:country=*] ISO-Länderkürzel (z.B. DE)
@@ -129,7 +134,7 @@ Tipp: \textbf{Prune} kann .gpx Tracks beschneiden.
 \href{http://wiki.osm.org/wiki/DE:Howto_Map_A}{DE:Howto\_Map\_A}
 \end{description}
 
-\newpage
+%\newpage
 
 \section*{Besonders wichtige Plugins}
 \begin{description}

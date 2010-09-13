@@ -44,7 +44,7 @@ Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 \Icon{splitway.png} \Key{p}{Pfad an diesem Knoten auftrennen}
 \Icon{joinareas.png} \Key{Shift + j}{Selektierte Flächen vereinigen}
 \Icon{undo.png} \Key{Strg + z}{Rückgängig}
-\Icon{add.png} \Key{Strg + b}{Tag hinzufügen}
+\Icon{add.png} \Key{Alt + b}{Tag hinzufügen}
 \Icon{copy.png} \Key{Strg + c}{ausgewähltes Element kopieren}
 \Icon{paste.png} \Key{Strg + v}{zuvor kopierte Elemente einfügen}
 \Icon{pastetags.png} \Key{Strg + Shift + v}{Tags des kopierten Objekts auf anderes Objekt übertragen}
@@ -59,14 +59,13 @@ Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 \newpage
 \section*{Tracks/Fotos}
 
-\subsection*{Bilder georeferenzieren} Es ist möglich, in Bildern Geoinformationen (Ort an dem das Bild erstellt wurde) zu 
-speichern. Da die allermeisten Digitalkameras (noch) keinen GPS-Empfänger haben, müssen die Bilder nachträglich mit 
-den Geoinformationen versehen werden. Dazu nimmt man die Uhrzeit, an der ein Bild aufgenommen wurde und sucht aus dem 
-passenden GPX-Track die zugehörige Koordinate. Damit das zuverlässig klappt, muss man die Uhrzeit der Kamera, mit der 
-GPS-Zeit abgleichen. \\
+\subsection*{Bilder georeferenzieren} Ein Foto kann Geoinformationen (Ort der Aufnahme) enthalten. 
+Bei Digitalkameras ohne GPS-Empfänger wird ein der gleichzeitig mit GPS aufgezeichnete Track nachträglich mit 
+den Fotos kombiniert. \\
+
 Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem Display des GPS-Gerätes.  
 In JOSM kann beim Importieren der Bilder dann die Uhrzeit von dem Bild abgelesen werden. \\
-JOSM berechnet um wieviel die Kamerauhr falsch ging. korrigiert die Zeit und übernimmt dann die Zuordnung der Fotos zu den jeweiligen Koordinaten. \\
+JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet dann die Fotos den jeweiligen Koordinaten zu. \\
 
 Tipp: \textbf{Prune} kann .gpx Tracks beschneiden. 
 \href{http://activityworkshop.net/software/prune/}{activityworkshop.net/software/prune/}

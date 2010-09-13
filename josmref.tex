@@ -33,8 +33,17 @@ und einen OSM-API-Account, es ist praktisch beiden den gleichen Benutzernamen zu
 Nachdem Sun Java 6 (auf Version achten!) installiert ist. lädt man JOSM als eine .jar Datei herunter und startet sie
 etwa mit \texttt{java -jar josm.jar}\\
 Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installiert.
-% wie kann man das extrem kurz und informativ einbinden?
 
+\section*{Besonders wichtige Plugins}
+\begin{description}
+\item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
+\item[\Icon{terrace.png} terracer] Werkzeug für Reihenhäuser
+\item[\Icon{validator.png} validator] Prüft Karte auf logische Unstimmigkeiten (Achtung: Oft  Fehlalarme!) 
+\item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM-Wiki beachten.
+\item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von Punkten aus GPX-Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
+\item[\Icon{turnrestrictions.png} turnrestrictions] vereinfacht das Erstellen von Abbiegebeschränkungen
+\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent wo das Bild aufgenommen wurde. (Georeferenzieren)
+\end{description}
 
 \section*{Daten holen/senden}
 \Icon{download.png} \Key{Strg + Shift + d}{Kartendaten vom OSM-Server holen (download)}
@@ -145,18 +154,7 @@ Beispiel: "fixme=Bitte Weg fortsetzen"
 
 %\newpage
 
-\section*{Besonders wichtige Plugins}
-\begin{description}
-\item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
-\item[\Icon{terrace.png} terracer] Hausbautool für Reihenhäuser
-\item[\Icon{validator.png} validator] Prüft Karte auf logische Unstimmigkeiten
-(Achtung! Erzeugt manchmal Fehlalarme!) 
-\item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal sehr kompliziert in der Installation, langsamer Bildaufbau. 
-Anleitung im OSM-Wiki beachten.
-\item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von Punkten aus GPX-Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
-\item[\Icon{turnrestrictions.png} turnrestrictions] vereinfacht das Erstellen von Abbiegebeschränkungen
-\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent wo das Bild aufgenommen wurde. (Georeferenzieren)
-\end{description}
+
 
 Diese Befehlsreferenz wurde von Jonas Stein in \LaTeX{} gesetzt.
 Verbesserungsvorschläge bitte an \href{mailto:news@jonasstein.de}{news@jonasstein.de} mailen.

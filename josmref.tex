@@ -24,32 +24,45 @@
 {\Huge JOSM Kurzreferenz}\\
 {\small PDF erstellt am \today}
 
-Es gibt in OSM nur Knoten mit einer Liste von Schlüssel"=Wert"=Paaren (Notation: \texttt{key\,=\,value}).
-Diese können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
-Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
+Es gibt in OSM nur Knoten mit einer Liste von Schlüssel"=Wert"=Paaren
+(Notation: \texttt{key\,=\,value}).  Diese können einen Nachfolger und
+einen Vorgänger haben und so einen Pfad bilden.  Eine Fläche wird
+durch ihren Rand als geschlossener Pfad dargestellt
 
 \section*{JOSM Installation} 
-Als aktiver Mapper benötigt man einen OSM"=Wikiaccount
-und einen OSM"=API"=Account; es ist praktisch, beiden den gleichen Benutzernamen zu geben.
-Nachdem Sun Java 6 (auf Version achten!) installiert ist, lädt man JOSM als .jar Datei herunter und startet sie
-etwa mit \texttt{java -jar josm.jar}\\
-Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installiert.
+Als aktiver Mapper benötigt man einen OSM"=Wikiaccount und einen
+OSM"=API"=Account; es ist praktisch, beiden den gleichen Benutzernamen
+zu geben.  Nachdem Sun Java 6 (auf Version achten!) installiert ist,
+lädt man JOSM als .jar Datei herunter und startet sie etwa mit
+\texttt{java -jar josm.jar}\\
+Jetzt werden Benutzername und Passwort eingetragen und fehlende
+Plugins installiert.
 
 
 \begin{flushleft}
 \section*{Besonders wichtige Plugins}
 \begin{description}
-\item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
+\item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren
+  und die Markierungen bearbeiten
 \item[\Icon{terrace.png} terracer] Werkzeug für Reihenhäuser
-\item[\Icon{validator.png} validator] Prüft die Daten auf logische Unstimmigkeiten (Achtung: Oft  Fehlalarme!)
-\item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM"=Wiki beachten.
-\item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von Punkten aus GPX"=Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
-\item[\Icon{turnrestrictions.png} turnrestrictions] vereinfacht das Erstellen von Abbiegebeschränkungen
-\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent wo das Bild aufgenommen wurde. ("`Georeferenzieren"')
+\item[\Icon{validator.png} validator] Prüft die Daten auf logische
+  Unstimmigkeiten (Achtung: Oft Fehlalarme!)
+\item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal
+  kompliziert in der Installation, langsamer Bildaufbau. Anleitung im
+  OSM"=Wiki beachten.
+\item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von
+  Punkten aus GPX"=Tracks direkt in JOSM (z.B. um Punktewolken zu
+  entfernen)
+\item[\Icon{turnrestrictions.png} turnrestrictions] vereinfacht das
+  Erstellen von Abbiegebeschränkungen
+\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg
+  Datei (EXIF) permanent wo das Bild aufgenommen
+  wurde. ("`Georeferenzieren"')
 \end{description}
 
 \section*{Daten holen/senden}
 \Icon{download.png} \Key{Strg + Shift + d}{Daten vom OSM"=Server holen (download)}
+
 \Icon{open.png} \Key{Strg + O}{GPS"=Track oder OSM"=Daten aus Datei einlesen (open)}
 \Icon{upload.png} \Key{Strg + Shift + u}{Änderungen an OSM"=Server senden (upload)}
 
@@ -65,30 +78,41 @@ Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installi
 \Icon{add.png} \Key{Alt + b}{Tag hinzufügen}
 \Icon{copy.png} \Key{Strg + c}{ausgewähltes Element kopieren}
 \Icon{paste.png} \Key{Strg + v}{zuvor kopierte Elemente einfügen}
-\Icon{pastetags.png} \Key{Strg + Shift + v}{Tags des kopierten Objekts auf anderes Objekt übertragen}
+\Icon{pastetags.png} \Key{Strg + Shift + v}{Tags des kopierten Objekts
+  auf anderes Objekt übertragen}
+
 %e\\[-48pt]
 \section*{Hausbau}
 \Icon{building.png} \Key{w}{Gebäude zeichnen}
-\Icon{extrude.png} \Key{x}{Fläche zwischen zwei Knoten wie eine Schublade ausziehen (extrudieren)}
-\Icon{terrace.png} \Key{Shift + t}{markierte Fläche in Reihenhäuser mit Adressen aufteilen}
-\Icon{reverseterrace.png} \Key{Shift + r}{Reihenfolge der Hausnummern von Reihenhäusern umkehren}
+\Icon{extrude.png} \Key{x}{Fläche zwischen zwei Knoten wie eine
+  Schublade ausziehen (extrudieren)}
+\Icon{terrace.png} \Key{Shift + t}{markierte Fläche in Reihenhäuser
+  mit Adressen aufteilen}
+\Icon{reverseterrace.png} \Key{Shift + r}{Reihenfolge der Hausnummern
+  von Reihenhäusern umkehren}
 
 \end{flushleft}
 
 \section*{Kommunikation}
-\Icon{about.png} \Key{Strg + i}{Ausgewähltes Objekt im Browser öffnen. Diesen eindeutigen Link kann man anderen senden um ein Objekt zu zeigen}
+\Icon{about.png} \Key{Strg + i}{Ausgewähltes Objekt im Browser
+  öffnen. Diesen eindeutigen Link kann man anderen senden um ein
+  Objekt zu zeigen}
 %\newpage
 \section*{Tracks/Fotos}
 
-\subsection*{Bilder georeferenzieren} Ein Foto kann Geoinformationen (Ort der Aufnahme) enthalten. 
-Bei Digitalkameras ohne GPS"=Empfänger wird ein mit GPS aufgezeichneter Track nachträglich mit
-den Fotos kombiniert.
+\subsection*{Bilder georeferenzieren}
+Ein Foto kann Geoinformationen (Ort der Aufnahme) enthalten.  Bei
+Digitalkameras ohne GPS"=Empfänger wird ein mit GPS aufgezeichneter
+Track nachträglich mit den Fotos kombiniert.
 
-Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem Display des GPS"=Gerätes.
-In JOSM kann beim Importieren der Bilder dann die Uhrzeit von diesem Bild abgelesen werden.
-JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet dann die Fotos den jeweiligen Koordinaten zu.
+Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem
+Display des GPS"=Gerätes. In JOSM kann beim Importieren der Bilder
+dann die Uhrzeit von diesem Bild abgelesen werden. JOSM berechnet den
+Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet dann die
+Fotos den jeweiligen Koordinaten zu.
 
 \vspace{0.5cm}
+
 \subsection*{.gpx Track beschneiden} kann \textbf{Prune} \\
 \href{http://activityworkshop.net/software/prune/}{activityworkshop.net/software/prune/}
 
@@ -100,7 +124,7 @@ JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet d
 \item[name=*] Name des Objektes
 \item[note=*] Notiz für andere Mapper
 \item[fixme=*] wie \texttt{note} für unfertige Einträge. 
-Beispiel: "`fixme=Bitte Weg fortsetzen"'
+  Beispiel: "`fixme=Bitte Weg fortsetzen"'
 \item[source=*] Datenquelle (Yahoo, GPS, survey, knowledge)
 \subsection*{Straßen}
 \item[highway=residential] innerörtliche Straße
@@ -167,8 +191,9 @@ Beispiel: "`fixme=Bitte Weg fortsetzen"'
 
 
 Diese Befehlsreferenz wurde von Jonas Stein in \LaTeX{} gesetzt.
-Verbesserungsvorschläge bitte an \href{mailto:news@jonasstein.de}{news@jonasstein.de} mailen.
-Die Quelldaten sind online erreichbar unter: 
+Verbesserungsvorschläge bitte an
+\href{mailto:news@jonasstein.de}{news@jonasstein.de} mailen.
+Die Quelldaten sind online erreichbar unter:
 \href{http://github.com/jonasstein/josmrefcard/}{github.com/jonasstein/josmrefcard/}
 
 \textbf{Dank für das Mitwirken an:} Max Andre, Edbert van Eimeren

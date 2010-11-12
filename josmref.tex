@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt,notumble]{leaflet}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 %\usepackage{setspace}
 \usepackage{hyperref}
@@ -34,6 +35,8 @@ Nachdem Sun Java 6 (auf Version achten!) installiert ist, lädt man JOSM als .ja
 etwa mit \texttt{java -jar josm.jar}\\
 Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installiert.
 
+
+\begin{flushleft}
 \section*{Besonders wichtige Plugins}
 \begin{description}
 \item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
@@ -69,6 +72,9 @@ Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installi
 \Icon{extrude.png} \Key{x}{Fläche zwischen zwei Knoten wie eine Schublade ausziehen (extrudieren)}
 \Icon{terrace.png} \Key{Shift + t}{markierte Fläche in Reihenhäuser mit Adressen aufteilen}
 \Icon{reverseterrace.png} \Key{Shift + r}{Reihenfolge der Hausnummern von Reihenhäusern umkehren}
+
+\end{flushleft}
+
 \section*{Kommunikation}
 \Icon{about.png} \Key{Strg + i}{Ausgewähltes Objekt im Browser öffnen. Diesen eindeutigen Link kann man anderen senden um ein Objekt zu zeigen}
 %\newpage
@@ -87,6 +93,7 @@ JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet d
 
 %\newpage
 \section*{Wichtige Tags}
+\begin{flushleft}
 \begin{description}
 \item[name=*] Name des Objektes
 \item[note=*] Notiz für andere Mapper
@@ -151,6 +158,7 @@ Beispiel: "`fixme=Bitte Weg fortsetzen"'
 \href{http://wiki.osm.org/wiki/DE:Howto_Map_A}{DE:Howto\_Map\_A} und
 \href{http://wiki.openstreetmap.org/wiki/DE:Map_Features}{DE:Map\_Features}
 \end{description}
+\end{flushleft}
 
 %\newpage
 

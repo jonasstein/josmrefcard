@@ -23,14 +23,14 @@
 {\Huge JOSM Kurzreferenz}\\
 {\small PDF erstellt am \today}
 
-Es gibt in OSM nur Knoten mit einer Liste von Schlüssel-Wert-Paaren (Notation: \texttt{key = Value}).
-Sie können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
+Es gibt in OSM nur Knoten mit einer Liste von Schlüssel-Wert-Paaren (Notation: \texttt{key\,=\,value}).
+Diese können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
 Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 
 \section*{JOSM Installation} 
 Als aktiver Mapper benötigt man einen OSM-Wikiaccount 
-und einen OSM-API-Account, es ist praktisch beiden den gleichen Benutzernamen zu geben.
-Nachdem Sun Java 6 (auf Version achten!) installiert ist. lädt man JOSM als eine .jar Datei herunter und startet sie
+und einen OSM-API-Account; es ist praktisch, beiden den gleichen Benutzernamen zu geben.
+Nachdem Sun Java 6 (auf Version achten!) installiert ist, lädt man JOSM als .jar Datei herunter und startet sie
 etwa mit \texttt{java -jar josm.jar}\\
 Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installiert.
 
@@ -38,23 +38,23 @@ Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installi
 \begin{description}
 \item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
 \item[\Icon{terrace.png} terracer] Werkzeug für Reihenhäuser
-\item[\Icon{validator.png} validator] Prüft Karte auf logische Unstimmigkeiten (Achtung: Oft  Fehlalarme!) 
+\item[\Icon{validator.png} validator] Prüft die Daten auf logische Unstimmigkeiten (Achtung: Oft  Fehlalarme!)
 \item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM-Wiki beachten.
 \item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von Punkten aus GPX-Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
 \item[\Icon{turnrestrictions.png} turnrestrictions] vereinfacht das Erstellen von Abbiegebeschränkungen
-\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent wo das Bild aufgenommen wurde. (Georeferenzieren)
+\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent, wo das Bild aufgenommen wurde. ("`Georeferenzieren"')
 \end{description}
 
 \section*{Daten holen/senden}
-\Icon{download.png} \Key{Strg + Shift + d}{Kartendaten vom OSM-Server holen (download)}
-\Icon{open.png} \Key{Strg + O}{GPS-Track, oder OSM-Daten aus Datei einlesen  (open)}
+\Icon{download.png} \Key{Strg + Shift + d}{Daten vom OSM-Server holen (download)}
+\Icon{open.png} \Key{Strg + O}{GPS-Track oder OSM-Daten aus Datei einlesen (open)}
 \Icon{upload.png} \Key{Strg + Shift + u}{Änderungen an OSM-Server senden (upload)}
 
 
 \section*{Werkzeuge}
 \Icon{move.png} \Key{s}{Auswahlwerkzeug (select)}
 \Icon{addnode.png} \Key{a}{Knoten hinzufügen (add nodes)}
-\Icon{combineway.png} \Key{c}{Pfade kombinieren (combine)}
+\Icon{combineway.png} \Key{c}{Pfade verbinden (combine)}
 \Icon{addnode.png} \Key{n}{neuen Knoten hinzufügen}
 \Icon{splitway.png} \Key{p}{Pfad an diesem Knoten auftrennen}
 \Icon{joinareas.png} \Key{Shift + j}{Selektierte Flächen vereinigen}
@@ -75,11 +75,11 @@ Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installi
 \section*{Tracks/Fotos}
 
 \subsection*{Bilder georeferenzieren} Ein Foto kann Geoinformationen (Ort der Aufnahme) enthalten. 
-Bei Digitalkameras ohne GPS-Empfänger wird ein der gleichzeitig mit GPS aufgezeichnete Track nachträglich mit 
+Bei Digitalkameras ohne GPS-Empfänger wird ein mit GPS aufgezeichneter Track nachträglich mit
 den Fotos kombiniert. \\
 
 Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem Display des GPS-Gerätes.  
-In JOSM kann beim Importieren der Bilder dann die Uhrzeit von dem Bild abgelesen werden. \\
+In JOSM kann beim Importieren der Bilder dann die Uhrzeit von diesem Bild abgelesen werden. \\
 JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet dann die Fotos den jeweiligen Koordinaten zu. \\
 
 \subsection*{.gpx Track beschneiden} kann \textbf{Prune} \\
@@ -91,14 +91,14 @@ JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet d
 \item[name=*] Name des Objektes
 \item[note=*] Notiz für andere Mapper
 \item[fixme=*] wie \texttt{note} für unfertige Einträge. 
-Beispiel: "fixme=Bitte Weg fortsetzen"
+Beispiel: "`fixme=Bitte Weg fortsetzen"'
 \item[source=*] Datenquelle (Yahoo, GPS, survey, knowledge)
 \subsection*{Straßen}
 \item[highway=residential] innerörtliche Straße
 \item[highway=living\_street] Spielstraße
 \item[maxspeed=*] Geschwindigkeitsbegrenzung 
 %zusatz km/h würde ich weglassen, da in D so üblich.
-\item[lit=yes\textbar no] Straße ist beleuchtet
+\item[lit=yes\textbar no] beleuchtet?
 \subsection*{Hausnummern}
 \item[addr:street=*] Straßenname
 \item[addr:housenumber=*] Hausnummer 
@@ -119,21 +119,21 @@ Beispiel: "fixme=Bitte Weg fortsetzen"
 \item[amenity=post\_office] Postfiliale
 \item[amenity=vending\_machine] zusammen mit:
 \item[vending=parcel\_pickup; parcel\_mail\_in] Packstation
-\subsection*{Stadtmöbelierung}
+\subsection*{Stadtmöblierung}
 \item[amenity=waste\_basket] Mülleimer
 \item[amenity=bench] Sitzbank
 \item[tourism=picnic\_site] Picknick-Platz
 \item[barrier=bollard] Poller
 \item[barrier=cycle\_barrier] Umlaufgitter
-\item[tourism=artwork] Statue, öffl. Kunstwerk
-\item[amenity=telephone] Telefonzelle
+\item[tourism=artwork] Statue, öff. Kunstwerk
+\item[amenity=telephone] öffentliches Telefon
 \subsection*{Essen/Trinken}
 \item[amenity=restaurant] Restaurant
 \item[amenity=cafe] Café
 \item[amenity=bar] Bar
 \item[amenity=nightclub] Disko
 \item[cuisine=*] Art der Küche
-\item[smoking=yes\textbar no] Raucher / Nichtraucher
+\item[smoking=yes\textbar no] Raucher\,/\,Nichtraucher
 \subsection*{Sonstiges}
 \item[amenity=bank] Bank (Geldinstitut)
 \item[operator=*] Name des Geldinstituts

@@ -24,13 +24,13 @@
 {\Huge JOSM Kurzreferenz}\\
 {\small PDF erstellt am \today}
 
-Es gibt in OSM nur Knoten mit einer Liste von Schlüssel-Wert-Paaren (Notation: \texttt{key\,=\,value}).
+Es gibt in OSM nur Knoten mit einer Liste von Schlüssel"=Wert"=Paaren (Notation: \texttt{key\,=\,value}).
 Diese können einen Nachfolger und einen Vorgänger haben und so einen Pfad bilden.
 Eine Fläche wird durch ihren Rand als geschlossener Pfad dargestellt
 
 \section*{JOSM Installation} 
-Als aktiver Mapper benötigt man einen OSM-Wikiaccount 
-und einen OSM-API-Account; es ist praktisch, beiden den gleichen Benutzernamen zu geben.
+Als aktiver Mapper benötigt man einen OSM"=Wikiaccount
+und einen OSM"=API"=Account; es ist praktisch, beiden den gleichen Benutzernamen zu geben.
 Nachdem Sun Java 6 (auf Version achten!) installiert ist, lädt man JOSM als .jar Datei herunter und startet sie
 etwa mit \texttt{java -jar josm.jar}\\
 Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installiert.
@@ -42,16 +42,16 @@ Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installi
 \item[\Icon{openstreetbugs.png} openstreetbugs] Kartenfehler markieren und die Markierungen bearbeiten
 \item[\Icon{terrace.png} terracer] Werkzeug für Reihenhäuser
 \item[\Icon{validator.png} validator] Prüft die Daten auf logische Unstimmigkeiten (Achtung: Oft  Fehlalarme!)
-\item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM-Wiki beachten.
-\item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von Punkten aus GPX-Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
+\item[\Icon{wms.png} wms] Zeigt Luftbilder im Hintergrund an. Manchmal kompliziert in der Installation, langsamer Bildaufbau. Anleitung im OSM"=Wiki beachten.
+\item[\Icon{editgpxmode.png} editgpx] Ermöglicht das Löschen von Punkten aus GPX"=Tracks direkt in JOSM (z.B. um Punktewolken zu entfernen)
 \item[\Icon{turnrestrictions.png} turnrestrictions] vereinfacht das Erstellen von Abbiegebeschränkungen
-\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent, wo das Bild aufgenommen wurde. ("`Georeferenzieren"')
+\item[\Icon{geotagging.png} photo geotagging] Speichert in die .jpg Datei (EXIF) permanent wo das Bild aufgenommen wurde. ("`Georeferenzieren"')
 \end{description}
 
 \section*{Daten holen/senden}
-\Icon{download.png} \Key{Strg + Shift + d}{Daten vom OSM-Server holen (download)}
-\Icon{open.png} \Key{Strg + O}{GPS-Track oder OSM-Daten aus Datei einlesen (open)}
-\Icon{upload.png} \Key{Strg + Shift + u}{Änderungen an OSM-Server senden (upload)}
+\Icon{download.png} \Key{Strg + Shift + d}{Daten vom OSM"=Server holen (download)}
+\Icon{open.png} \Key{Strg + O}{GPS"=Track oder OSM"=Daten aus Datei einlesen (open)}
+\Icon{upload.png} \Key{Strg + Shift + u}{Änderungen an OSM"=Server senden (upload)}
 
 
 \section*{Werkzeuge}
@@ -81,10 +81,10 @@ Jetzt werden Benutzername und Passwort eingetragen und fehlende Plugins installi
 \section*{Tracks/Fotos}
 
 \subsection*{Bilder georeferenzieren} Ein Foto kann Geoinformationen (Ort der Aufnahme) enthalten. 
-Bei Digitalkameras ohne GPS-Empfänger wird ein mit GPS aufgezeichneter Track nachträglich mit
+Bei Digitalkameras ohne GPS"=Empfänger wird ein mit GPS aufgezeichneter Track nachträglich mit
 den Fotos kombiniert. \\
 
-Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem Display des GPS-Gerätes.  
+Dazu fotografiert man \textbf{während} der Tour die Uhrzeit auf dem Display des GPS"=Gerätes.
 In JOSM kann beim Importieren der Bilder dann die Uhrzeit von diesem Bild abgelesen werden. \\
 JOSM berechnet den Zeitversatz zur Kamerauhr, korrigiert diese Zeit und ordnet dann die Fotos den jeweiligen Koordinaten zu. \\
 
@@ -114,13 +114,13 @@ Beispiel: "`fixme=Bitte Weg fortsetzen"'
 %vielleicht nicht unbedingt für Anfänger, da eigentlich nur als Notlösung gedacht ~MA
 \item[addr:postcode=*] Postleitzahl
 \item[addr:city=*] Stadt
-\item[addr:country=*] ISO-Länderkürzel (z.B. DE)
+\item[addr:country=*] ISO"=Länderkürzel (z.B. DE)
 % was anderes als DE wird der Einsteiger erstmal nicht brauchen.
 \subsection*{ÖPNV}
 \item[highway=bus\_stop] Bushaltestelle
 \item[amenity=bus\_station] Busbahnhof
 \item[railway=station] Bahnhof
-\item[railway=halt] Bahn-Haltepunkt
+\item[railway=halt] Bahn"=Haltepunkt
 \subsection*{Post}
 \item[amenity=post\_box] Briefkasten
 \item[amenity=post\_office] Postfiliale
@@ -129,7 +129,7 @@ Beispiel: "`fixme=Bitte Weg fortsetzen"'
 \subsection*{Stadtmöblierung}
 \item[amenity=waste\_basket] Mülleimer
 \item[amenity=bench] Sitzbank
-\item[tourism=picnic\_site] Picknick-Platz
+\item[tourism=picnic\_site] Picknick"=Platz
 \item[barrier=bollard] Poller
 \item[barrier=cycle\_barrier] Umlaufgitter
 \item[tourism=artwork] Statue, öff. Kunstwerk
@@ -150,11 +150,11 @@ Beispiel: "`fixme=Bitte Weg fortsetzen"'
 \item[amenity=school] Schule
 \item[tourism=museum] Museum
 \item[leisure=playground] Spielplatz
-% \item[highway=stop] STOP-Schild 
+% \item[highway=stop] STOP"=Schild
 % ^^ hier gibt es verschiedene Auffassungen, ob/wie das zu mappen ist. besser nicht fuer Anfaenger. ~JS
 \item[shop=supermarket] Supermarkt (Liste weiterer Shops im Wiki)
 \\
-\item[Tipp:] Eine Übersicht wichtiger Tags steht im OSM-Wiki unter
+\item[Tipp:] Eine Übersicht wichtiger Tags steht im OSM"=Wiki unter
 \href{http://wiki.osm.org/wiki/DE:Howto_Map_A}{DE:Howto\_Map\_A} und
 \href{http://wiki.openstreetmap.org/wiki/DE:Map_Features}{DE:Map\_Features}
 \end{description}
